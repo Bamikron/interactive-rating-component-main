@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Overpass;
+    src: url(https://fonts.google.com/specimen/Overpass);
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-Dark-Blue);
+    font-family: 'Overpass', sans-serif;
+}
+
+
+main {
+    width: 20%;
+    background-image: linear-gradient(to bottom, var(--Dark-Blue), var(--Very-Dark-Blue));
+    box-shadow: 0px 0.1px 1px var(--Light-Grey);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    gap: 8px;
+}
+
+.hidden {
+    text-align: center;
+    gap: 0px;
+    display: none;
+}
+
+.hidden img {
+
+    width: 160px;
+}
+
+.hidden .result {
+    margin-top: 16px;
+    background-color: var(--Dark-Blue);
+    color: var(--Orange);
+
+    border-radius: 16px;
+    padding: 8px 0px;
+    width: 60%;
+}
+
+.rateing {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--Very-Dark-Blue);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+h4 {
+    font-size: 24px;
+    color: var(--White);
+}
+
+p {
+    color: var(--Light-Grey);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: -16px 0px 0px;
+}
+
+.number {
+    display: flex;
+    grid-area: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number button {
+    color: var(--Light-Grey);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--Dark-Blue);
+    font-family: 16px;
+    padding: 0px 16px;
+}
+
+.number button:hover,
+button:hover {
+    background-color: var(--White);
+    color: var(--Very-Dark-Blue);
+    transition: background-color 0.3s;
+}
+
+
+.rating-btn.active,
+button.active {
+    background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+    transition: background-color 0.3s;
+}
+
+
+button {
+    background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+    border-radius: 16px;
+    border: none;
+    height: 40px;
+    margin-top: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+main>* {
+    width: 100%;
+}
