@@ -132,3 +132,19 @@ button {
 main>* {
     width: 100%;
 }
+
+
+@media screen and (max-width: 767px) {
+    main {
+        width: 80%;
+        padding: 24px;
+    }
+
+    .hidden .result {
+        border-radius: 16px;
+        padding: 8px 0px;
+        width: 80%;
+    }
+
+
+}
